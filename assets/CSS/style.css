@@ -145,5 +145,16 @@ p {
     font-size: 36px;
 }
 
+.ul li{
+    display: inline-block;
+}
 
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
 
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
