@@ -41,7 +41,7 @@ footer{
     color: #B5A642;
 }
 
-.a {
+a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -68,12 +68,15 @@ aside {
     flex: 1;
     background-color: #b3cd9e;
     padding: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .about {
@@ -116,6 +119,9 @@ aside {
     max-height: 200px;
 }
 
+.about img:hover{
+    max-height: 300px;
+}
 .contact img {
     max-height: 200px;
 }
@@ -135,7 +141,8 @@ aside {
 /*aligned text in the footer to the center*/
 footer h2,
 p {
-   text-align: center;  
+   text-align: center; 
+   color: #ffffff; 
 }
 /* contact list icons- controls images in the list of contacts*/
 .contact ul img {
@@ -161,6 +168,7 @@ p {
 
 .contact ul {
     display: flex;
+    justify-content: space-around;
 }
 
 /* makes image float to the right*/
@@ -174,10 +182,6 @@ p {
     margin-right: 25px;
 }
 /* displays contact list in a line*/
-.contact ul {
-    display: inline-flex;
-}
-
 .contact ul li {
     display: inline;
 }
@@ -198,9 +202,17 @@ header,
 footer {
     background: pink;
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    text-align: center;
+}
 /* display navigation links in a column*/
 .header nav ul{
-    flex-direction: column;
+    /* flex-direction: column;  */
+    justify-content: center;
 }
 /*resized the contect image*/
 .content img {
@@ -211,9 +223,17 @@ footer {
 .contact ul {
     flex-direction: column;
 }
+.contact ul li img {
+    float: left;
+}
+.contact ul li p {
+    padding-top: 13px;
+    margin-left: 0;
+    
+}
 }
 /* between 641px and 1007px*/
-@media screen and (min-width: 641px and max-width: 1007px) {
+@media screen and (min-width: 641px; max-width: 1007px) {
 
 }
 
