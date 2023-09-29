@@ -9,16 +9,17 @@ body {
 }
 
 header,
-footer {
+footer{
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #003153;
-    color: #B5A642;
+
 }
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
+    color: #B5A642
 }
 
 .header nav {
@@ -30,12 +31,14 @@ footer {
 }
 
 .header nav ul {
-    list-style-type: none;
+    display: flex;
+    color: #B5A642;
 }
 
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    color: #B5A642;
 }
 
 .a {
@@ -78,7 +81,7 @@ aside {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #55c8dc;
     color: #ffffff;
 }
 
@@ -87,7 +90,7 @@ aside {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #55c8dc;
     color: #ffffff;
 }
 
@@ -96,7 +99,7 @@ aside {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #55c8dc;
     color: #ffffff;
 }
 
@@ -105,7 +108,7 @@ aside {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #55c8dc;
     color: #ffffff;
 }
 
@@ -129,6 +132,17 @@ aside {
     margin-bottom: 20px;
     font-size: 36px;
 }
+/*aligned text in the footer to the center*/
+footer h2,
+p {
+   text-align: center;  
+}
+/* contact list icons- controls images in the list of contacts*/
+.contact ul img {
+    display: block;
+    margin: 10px auto;
+    max-width: 25px;
+}
 
 .contact h2 {
     margin-bottom: 20px;
@@ -145,9 +159,10 @@ aside {
     font-size: 36px;
 }
 
-.ul li{
-    display: inline-block;
+.contact ul {
+    display: flex;
 }
+
 /* makes image float to the right*/
 .float-right {
     float: right;
@@ -159,24 +174,50 @@ aside {
     margin-right: 25px;
 }
 /* displays contact list in a line*/
-.contact ul li {
+.contact ul {
     display: inline-flex;
 }
-/* at 992px or smaller side bar will not show up*/
-@media screen and (max-width: 992px) {
-.side {
-   display: none
+
+.contact ul li {
+    display: inline;
 }
-/* Change the header and footer background */   
+/* at 640px or smaller side bar will not show up*/
+@media screen and (max-width: 640px) {
+aside {
+   display: none;
+}
+/*contect stretches to 100%*/
+.content {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Change the header and footer background color */   
 header,
 footer {
     background: pink;
 }
-.contact ul li{
-    display: list-item;
+/* display navigation links in a column*/
+.header nav ul{
+    flex-direction: column;
 }
-.about h2 {
-    
+/*resized the contect image*/
+.content img {
+    max-height: 125px;
+    max-width: 125px;
 }
+/* Displaying contact list as a column*/
+.contact ul {
+    flex-direction: column;
+}
+}
+/* between 641px and 1007px*/
+@media screen and (min-width: 641px and max-width: 1007px) {
+
 }
 
+/* at 1008px and larger */
+@media screen and (min-width: 1008px) {
+    
+}
