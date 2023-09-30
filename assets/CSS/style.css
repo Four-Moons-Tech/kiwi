@@ -60,10 +60,24 @@ a {
 }
 
 main {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-color: plum;
+    padding-left: 10;
+    padding-right: 10;
 }
-  
+table {
+    width: 75%;
+    float: right;
+}
+table th {
+    width: 25%;
+}
+table img {
+    max-width: 200px;
+    max-height: 200px;
+}
 aside {
     flex: 1;
     background-color: #b3cd9e;
@@ -73,6 +87,7 @@ aside {
 }
 
 .content {
+    display: table-cell;
     width: 75%;
     display: inline-block;
     margin-left: 20px;
@@ -115,55 +130,38 @@ aside {
     color: #ffffff;
 }
 
-.about img {
+/* Added some padding and styling for content images */
+.content img {
     max-height: 200px;
+    padding: 10px 10px;
+    border: 2px solid #bfbfbf;
+    background-color: #fff;
 }
-
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 30px;  
+}
+/*Underlines content headlines when hovering*/
+.content h2:hover {
+    text-decoration: underline;
+}
+/* When hovering over the about image, it becomes bigger*/
 .about img:hover{
     max-height: 300px;
 }
-.contact img {
-    max-height: 200px;
-}
 
-.resume img {
-    max-height: 200px;
-}
-
-.work img {
-    max-height: 200px;
-}
-
-.about h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
 /*aligned text in the footer to the center*/
 footer h2,
 p {
    text-align: center; 
    color: #ffffff; 
 }
+
 /* contact list icons- controls images in the list of contacts*/
 .contact ul img {
     display: block;
     margin: 10px auto;
     max-width: 25px;
-}
-
-.contact h2 {
-    margin-bottom: 20px;
-    font-size: 36px;   
-}
-
-.resume h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.work h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 .contact ul {
@@ -228,8 +226,7 @@ footer {
 }
 .contact ul li p {
     padding-top: 13px;
-    margin-left: 0;
-    
+    margin-left: 0;    
 }
 }
 /* between 641px and 1007px*/
