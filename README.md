@@ -21,4 +21,4 @@ See the following screenshots of the deployed website:
 
 Link to the deployed site: https://four-moons-tech.github.io/kiwi/
 
-Table code resourse: 
+Table code resourse: https://youtu.be/IafBkgqx3ds?si=_CF5EjOxAlcCcMGL
