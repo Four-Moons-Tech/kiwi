@@ -3,25 +3,24 @@
     padding: 0;
     margin: 0;
 }
-
+/*styles body*/
 body {
     background-color:white;
 }
-
+/*Styles header and footer*/
 header,
 footer{
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #003153;
-    
+    background-color: #003153;   
 }
-
+/*Styles header Anna Moon*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
     color: #B5A642
 }
-
+/*Styles header navigation*/
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -29,26 +28,25 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
-
+/*Styles header navigation list*/
 .header nav ul {
-    display: flex;
-    color: #B5A642;
+    display: flex;  
 }
-
+/* Styles heade navigation list items*/
 .header nav ul li {
     display: inline-block;
-    margin-left: 25px;
-    color: #B5A642;
+    margin-left: 25px; 
 }
-
+/*Styles anckor tags for links*/
 a {
-    color: #ffffff;
-    text-decoration: none;
+    color:white;
+    text-decoration:none;
 }
-
+/* Adds psydo class, underlines texts when hovering*/
 a:hover {
     text-decoration: underline;
 }
+/* Styles hero*/
 .hero{
     height: 200px;
     width: 100%;
@@ -57,48 +55,42 @@ a:hover {
     background-size: cover;
     background-position: center;
 }
-
+/* Styles paragraph*/
 .p {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
-
+/* Styles main*/
 main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
+/* Styles table*/
 table {
     width: 100%;
 }
+/* Styles table header*/
 table th {
     width: 20%;
     background-color: #ccced8;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
+    color:#003153;
     font-size: 30px;
-
 }
-}
-
+} /* I can't tell why I cannot remove this bracket, but when I do, the space between th and td increases*/
+/* Styles table data cell*/
 table td {
     width: 80%;
     float: right;
     display: block;
     padding-right: 10px;
 }
-/* Added some padding and styling for table images */
-table img {
-    max-width: 200px;
-    max-height: 200px;
-    padding: 5px 5px;
-    border: 2px solid #bfbfbf;
-    background-color: #fff;
-}
+
 table h2 {
     display: none;
 }
+/* Styles about section */
 .about {
     padding: 50px;
     height: 300px;
@@ -106,15 +98,28 @@ table h2 {
     background-color: #55c8dc;
     color: #ffffff;
 }
-
-.contact {
-    padding: 50px;
-    height: 300px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #55c8dc;
-    color: #ffffff;
+/*Styles about image */
+.about img {
+    max-width: 200px;
+    max-height: 200px;
+    border:solid #ccced8;
+    border-width: 2px;
 }
-
+/*Styles resume image */
+.resume img{
+    max-width: 200px;
+    max-height: 200px;
+    border:solid #ccced8;
+    border-width: 2px;
+}
+/*Styles contact image */
+.contact img{
+    max-width: 200px;
+    max-height: 200px;
+    border:solid #ccced8;
+    border-width: 2px;
+}
+/* Styles resume section*/
 .resume {
     padding: 50px;
     height: 300px;
@@ -122,7 +127,7 @@ table h2 {
     background-color: #55c8dc;
     color: #ffffff;
 }
-
+/* Styles work section*/
 .work {
     flex-grow: 4;
     flex-shrink: 1;
@@ -135,56 +140,59 @@ table h2 {
     color: #ffffff;
     justify-content: space-evenly;
 }
+/* Styles contact section*/
+.contact {
+    padding: 50px;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #55c8dc;
+    color: #ffffff;
+}
+/* Styles card section*/
 .card {
     box-sizing: border-box;
     display: block;
     border-style:dotted;
-    border-width: 1px;
-    border-radius: 50px;
+    border-width: 2px;
+    border-radius: 30px;
     padding: 10px;
     flex: 0 0 300px;
     transform: rotate(3deg);
-    box-shadow: 10px 10px 5px #ccced8;
-    margin: 20px;
+    box-shadow: 5px 5px 5px #ccced8;
+    margin: 15px;
 }
+/* Styles card image*/
 .card img{
-    width: 100%;
-}
-.card:hover {
-    max-block-size: 400px;
+    width:100%;
 }
 /* Styles card header: adds rounded corners to top*/
 h3 {
     text-align: center;
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     padding: 20px;
     background-color: #003153;
-
 }
 /* When hovering over the about image, it becomes bigger*/
 .about img:hover{
     max-height: 300px;
 }
-
-/*aligned text in the footer to the center*/
+/*aligned header and paragraph in the footer to the center*/
 footer h2,
 p {
    text-align: center; 
    color: #ffffff; 
 }
-
-/* contact list icons- controls images in the list of contacts*/
-.contact ul img {
-    display: block;
-    margin: 10px auto;
-    max-width: 25px;
-}
-
+/* Styles contact list*/
 .contact ul {
     display: flex;
     justify-content: space-around;
 }
-
+/* contact list icons- controls images in the list of contacts*/
+.contact ul img {
+    display: block;
+    margin: 10px auto;
+    max-width: 40px;
+}
 /* makes image float to the right*/
 .float-right {
     float: right;
@@ -199,23 +207,26 @@ p {
 .contact ul li {
     display: inline;
 }
-/* at 766px or smaller side bar will not show up*/
+/* at 766px or smaller */
 @media screen and (max-width: 766px) {
+/*table header will not show up*/
 table th {
     display: none;
 }
-/*contect stretches to 100%*/
+/*table data cell contect stretches to 100%*/
 .table td {
     width: 100%;
     margin-left: 10px;
     margin-right: 10px;
 }
+
 table h2 {
     display:none;
     padding-top: 20px;
     padding-bottom: 20px;
     
 }
+/*Work section flex adjustments*/
 .work {
     padding: 20px;
     flex-shrink: 1;
@@ -228,14 +239,14 @@ header,
 footer {
     background: #ccced8;
 }
-
+/* Header adjustments*/
 .header {
     display: flex;
     flex-direction: column;
     height: 125px;
     text-align: center;
 }
-/* display navigation links in a column*/
+/* display navigation links centered*/
 .header nav ul{
     justify-content: center;
 }
@@ -248,22 +259,39 @@ table img {
 .contact ul {
     flex-direction: column;
 }
+/* Displays images to the left*/
 .contact ul li img {
     float: left;
 }
+/*addes padding for contact list paragraph*/
 .contact ul li p {
-    padding-top: 13px;
+    padding-top: 18px;
     margin-left: 0;    
 }
 }
 @media screen and (max-width: 1620px){
+    /*makes table header narrower*/
     table th {
         width: 12%;
     }
+    /*stacles work content*/
     .work {
         flex-shrink: 2;
         flex-grow: 4;
         flex-basis: 0%;
         flex-wrap: wrap;
     }
+    /* Displays contact list as a column*/
+    .contact ul {
+    flex-direction: column;
+    }
+    /* Displays images to the left*/
+    .contact ul li img {
+    float: left;
+    }
+    /*addes padding for contact list paragraph*/
+    .contact ul li p {
+    padding-top: 18px;
+    margin-left: 0;
+    }  
 }
