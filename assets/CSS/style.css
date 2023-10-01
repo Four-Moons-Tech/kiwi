@@ -78,7 +78,7 @@ table th {
     color:#003153;
     font-size: 30px;
 }
-} /* I can't tell why I cannot remove this bracket, but when I do, the space between th and td increases*/
+/* I can't tell why I cannot remove this bracket, but when I do, the space between th and td increases*/
 /* Styles table data cell*/
 table td {
     width: 80%;
