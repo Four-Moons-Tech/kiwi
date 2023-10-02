@@ -285,26 +285,36 @@ table img {
     padding-top: 18px;
     margin-left: 0;    
 }
+/* Hides contact image*/
 .contact img {
     display:none;
 }
+/* Hides resume image*/
 .resume img {
     display: none;
 }
 .first-card img {
     width: 100%
 }
+/* Adjusts height to fit content*/
 .about {
     height: fit-content;
 }
+/* Adjusts height to fit content*/
 .resume {
     height: fit-content;
 }
+/* Adjusts height to fit content*/
+.contact {
+    height: fit-content;
+}
+/* Styles first-work*/
 .first-work {
     padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
 }
+/* Styles first-work header*/
 .first-work h2 {
     text-align: center;   
 }
@@ -329,7 +339,7 @@ table img {
     .contact ul li img {
     float: left;
     }
-    /*addes padding for contact list paragraph*/
+    /* Adds padding for contact list paragraph*/
     .contact ul li p {
     padding-top: 18px;
     margin-left: 0;

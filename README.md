@@ -18,6 +18,7 @@ See the following screenshots of the deployed website:
  ![screenshot3](../kiwi/assets/Images/Screenshot3.png)
  ![screenshot4](../kiwi/assets/Images/Screenshot4.png)
  ![screenshot5](../kiwi/assets/Images/Screenshot5.png)
+ ![screenshot6](../kiwi/assets/Images/Screenshot6.png)
 
 Link to the deployed site: https://four-moons-tech.github.io/kiwi/
 
