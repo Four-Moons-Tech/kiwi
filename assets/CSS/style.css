@@ -164,6 +164,7 @@ table h2 {
 .card img{
     width:100%;
 }
+/*Styles first-card that contains first work*/
 .first-card {
     box-sizing: border-box;
     display: block;
@@ -173,14 +174,10 @@ table h2 {
     border-radius: 30px;
     margin: 25px;
 }
-
+/*Styles first-card image*/
 .first-card img{
     width: 50%;
     padding:25px 25px;
-}
-.first-card p {
-    
-    
 }
 /* Styles card header: adds rounded corners to top*/
 h3 {
